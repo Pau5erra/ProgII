@@ -1,5 +1,5 @@
 #include <iostream>
-
+/*
 class Shape{
 public:
 
@@ -26,11 +26,25 @@ public:
 	
 		return ((x*y) / 2);
 	}
-};
+};*/
+void Swap(int& a, int& b){//utilitza referències
 
+	int c = a;
+	a = b;
+	b = c;
+
+
+}
 int main(){
 
-	
+	int a = 5;
+	int b = 3;
+
+	Swap(a, b);
+
+
+
+	/*
 	Shape* s1 = new Triangle();
 	Shape* s2 = new Box();
 
@@ -41,7 +55,7 @@ int main(){
 	s2->y = 3.0;
 
 	printf("%f\n", s1->getArea());
-	printf("%f\n", s2->getArea());
+	printf("%f\n", s2->getArea());*/
 
 	system("PAUSE");
 	return 0;

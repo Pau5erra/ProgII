@@ -4,8 +4,6 @@
 
 Point Point::operator = (Point p){
 
-	
-
 	x = p.x;
 	y = p.y;
 
@@ -28,23 +26,29 @@ bool Point::operator==(Point p)const{
 
 Point Point::operator + (Point p)const{
 
-	 x + p.x;
-	y + p.y;
+	Point tmp;
+	tmp.x = x + p.x;
+	tmp.y = y + p.y;
 
-	return *this;
+	return tmp;
 }
 Point Point::operator - (Point p)const{
 	
+	Point tmp;
+	tmp.x=x - p.x;
+	tmp.y=y - p.y;
 
-	x - p.x;
-	y - p.y;
-
-	return *this;
+	return tmp;
 }
 bool Point::operator != (Point p)const{
 	bool tmp;
 
-	if (x != p.x && y != p.y)
+	if (x != p.x && y != p.y){
+		tmp = true;
+	}
+	else{
+		tmp = false;
+	}
 	
 	return tmp;
 
@@ -64,4 +68,31 @@ Point Point::operator -= (Point p){
 	y = y - p.y;
 
 	return *this;
+}
+
+bool Point::isZero() const{
+	bool tmp;
+
+	if (x == 0 && y == 0){
+		tmp = true;
+	}
+	else{
+		tmp = false;
+	}
+
+	return tmp;
+}
+
+void Point::SetZero(){
+
+	x = 0;
+	y = 0;
+
+}
+
+Point Point::Negate(Point p){
+
+	x = -x;
+	y = -y;
+
 }

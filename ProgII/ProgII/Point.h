@@ -14,7 +14,7 @@ private:
 		Point operator +=(Point p);
 		Point operator -=(Point p);
 
-		bool isZero();
-		Point SetZero();
-		bool Negate();
+		bool isZero()const;
+		void SetZero();
+		Point Negate(Point p);
 };

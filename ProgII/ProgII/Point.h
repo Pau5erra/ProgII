@@ -6,15 +6,19 @@ private:
 
 	public:
 
-		Point operator =(Point p);
-		bool operator ==(Point p)const;
-		Point operator + (Point p)const;
-		Point operator - (Point p)const;
-		bool operator != (Point p)const;
-		Point operator +=(Point p);
-		Point operator -=(Point p);
+		Point();
+		Point(Point& p){ x=p.x; y=p.y; }
+		Point(int _x, int _y){ x = _x; y = _y; }
 
+const	Point& operator =(const Point& p);
+		bool operator ==(const Point& p)const;
+		Point operator + (const Point& p)const;
+		Point operator - (const Point& p)const;
+		bool operator != (const Point& p)const;
+const	Point& operator +=(const Point& p);
+const	Point& operator -=(const Point& p);
+		
 		bool isZero()const;
 		void SetZero();
-		Point Negate(Point p);
+const   Point Negate(Point& p);
 };

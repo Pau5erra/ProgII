@@ -2,16 +2,15 @@
 #include <iostream>
 
 
-Point Point::operator = (Point p){
+const Point& Point::operator = (const Point& p){
 
 	x = p.x;
 	y = p.y;
 
 	return *this;
-
 }
 
-bool Point::operator==(Point p)const{
+bool Point::operator==(const Point& p)const{
 	
 	bool tmp1;
 
@@ -24,23 +23,25 @@ bool Point::operator==(Point p)const{
 	return tmp1;
 }
 
-Point Point::operator + (Point p)const{
+Point Point::operator + (const Point& p)const{
 
 	Point tmp;
+
 	tmp.x = x + p.x;
 	tmp.y = y + p.y;
 
 	return tmp;
 }
-Point Point::operator - (Point p)const{
+Point Point::operator - (const Point& p)const{
 	
 	Point tmp;
+
 	tmp.x=x - p.x;
 	tmp.y=y - p.y;
 
 	return tmp;
 }
-bool Point::operator != (Point p)const{
+bool Point::operator != (const Point& p)const{
 	bool tmp;
 
 	if (x != p.x && y != p.y){
@@ -54,7 +55,7 @@ bool Point::operator != (Point p)const{
 
 }
 
-Point Point::operator += (Point p){
+const Point& Point::operator += (const Point& p){
 	
 	x = x + p.x;
 	y = y + p.y;
@@ -62,7 +63,7 @@ Point Point::operator += (Point p){
 	return *this;
 }
 
-Point Point::operator -= (Point p){
+const Point& Point::operator -= (const Point& p){
 
 	x = x - p.x;
 	y = y - p.y;
@@ -90,9 +91,10 @@ void Point::SetZero(){
 
 }
 
-Point Point::Negate(Point p){
+const Point Point::Negate(Point& p){
 
 	x = -x;
 	y = -y;
 
+	return *this;
 }

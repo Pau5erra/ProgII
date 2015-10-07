@@ -1,4 +1,5 @@
 #include <iostream>
+#include "Point.h"
 /*
 class Shape{
 public:
@@ -42,6 +43,7 @@ int main(){
 
 	Swap(a, b);
 
+	Point p2;
 
 
 	/*

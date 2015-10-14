@@ -7,7 +7,7 @@ Cercle Cercle::operator = (const Cercle& c){
 	return *this;
 }
 
-bool Cercle::operator==(const Cercle& c){
+bool Cercle::operator==(const Cercle& c) const{
 
 	bool ret=true;
 
@@ -19,7 +19,7 @@ bool Cercle::operator==(const Cercle& c){
 	}
 }
 
-bool Cercle::operator!=(const Cercle& c){
+bool Cercle::operator!=(const Cercle& c) const{
 
 	bool ret=true;
 	
@@ -46,7 +46,7 @@ const Cercle Cercle::operator -= (const Cercle& c){
 	return *this;
 }
 
-Cercle Cercle::operator+(const Cercle& c){
+Cercle Cercle::operator+(const Cercle& c) const{
 	Cercle tmp;
 
 	tmp.r = r + c.r;
@@ -54,7 +54,7 @@ Cercle Cercle::operator+(const Cercle& c){
 	return tmp;
 }
 
-Cercle Cercle::operator-(const Cercle& c){
+Cercle Cercle::operator-(const Cercle& c) const{
 
 	Cercle tmp;
 

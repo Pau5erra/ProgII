@@ -36,16 +36,82 @@ void Swap(int& a, int& b){//utilitza referències
 
 
 }
-int main(){
 
+void Swap(float& a, float& b){//utilitza referències
+
+	float c = a;
+	a = b;
+	b = c;
+
+
+}
+
+void Swap(char& a, char& b){//utilitza referències
+
+	char c = a;
+	a = b;
+	b = c;
+
+	
+
+}
+
+class Base{
+public:
+	char* characters;
+
+	Base(int i){ characters = new char[i]; };
+	virtual ~Base(){ delete characters; };
+
+};
+
+class Deriv : public Base{
+public:
+	int* numbers;
+
+	Deriv(int i): Base(i){ numbers = new int[i]; };
+
+	~Deriv(){ delete numbers; };
+
+};
+int main(){
+	/*
 	int a = 5;
 	int b = 3;
+	float c = 5.5;
+	float d = 3.3;
+	char e = 'B';
+	char f = 'A';
 
 	Swap(a, b);
+	Swap(c, d);
+	Swap(e, f);
+	printf("Primer: %c, Despres %c/n", e, f);
+	*/
 
-	Point p2;
+	int a = -1;
 
+	++a;
 
+	printf("%d", a);
+
+	a++;
+
+	printf("%d", a);
+	
+	if (1){ printf("holfasdfasd");
+	}
+
+	Base* b1 = new Deriv(10);
+
+		
+	delete b1;
+		
+	
+
+	
+
+	
 	/*
 	Shape* s1 = new Triangle();
 	Shape* s2 = new Box();

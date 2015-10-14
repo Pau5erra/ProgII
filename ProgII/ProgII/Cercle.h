@@ -1,3 +1,5 @@
+#include "Point.h"
+
 class Cercle{
 private:
 

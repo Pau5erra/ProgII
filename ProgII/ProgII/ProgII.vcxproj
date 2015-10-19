@@ -69,6 +69,7 @@
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Apunts.h" />
     <ClInclude Include="Box.h" />
     <ClInclude Include="Cercle.h" />
     <ClInclude Include="Point.h" />

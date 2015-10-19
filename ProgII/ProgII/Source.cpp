@@ -58,18 +58,18 @@ void Swap(char& a, char& b){//utilitza referències
 
 class Base{
 public:
-	char* characters;
+	int _n;
 
-	Base(int i){ characters = new char[i]; };
-	virtual ~Base(){ delete characters; };
+	Base(int n){ _n = n; };
+	virtual ~Base(){};
 
 };
 
-class Deriv : public Base{
+class Deriv{
 public:
 	int* numbers;
 
-	Deriv(int i): Base(i){ numbers = new int[i]; };
+	Deriv(int i){ numbers = new int[i]; };
 
 	~Deriv(){ delete numbers; };
 
@@ -88,7 +88,18 @@ int main(){
 	Swap(e, f);
 	printf("Primer: %c, Despres %c/n", e, f);
 	*/
+	Base* pclass = new Base(5); //dona error perquè el constructor de la classe base demana arguments
 
+	Base a1(5);
+	Base b1(a1); //copia a1 a b1
+	
+	if (b1._n == 5){
+
+		printf("funciona");
+	}
+
+
+	/*
 	int a = -1;
 
 	++a;
@@ -106,7 +117,7 @@ int main(){
 
 		
 	delete b1;
-		
+		*/
 	
 
 	

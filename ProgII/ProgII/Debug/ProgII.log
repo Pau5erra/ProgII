@@ -1,4 +1,4 @@
-﻿Compilación iniciada a las 14/10/2015 16:17:17.
+﻿Compilación iniciada a las 19/10/2015 16:55:55.
      1>Proyecto "D:\Users\pausc1\Documents\GitHub\ProgII\ProgII\ProgII\ProgII.vcxproj" en el nodo 2 (Build destinos).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Source.cpp
@@ -12,4 +12,4 @@
 
 Compilación correcta.
 
-Tiempo transcurrido 00:00:01.77
+Tiempo transcurrido 00:00:01.37

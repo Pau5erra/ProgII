@@ -70,6 +70,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Apunts.h" />
+    <ClInclude Include="asdf.h" />
     <ClInclude Include="Box.h" />
     <ClInclude Include="Cercle.h" />
     <ClInclude Include="Point.h" />

@@ -28,6 +28,16 @@ public:
 		return ((x*y) / 2);
 	}
 };*/
+
+//Templates
+template <class tmp>
+
+void SwapTmp(tmp& a, tmp& b){
+	tmp c = a;
+	a = b;
+	b = c;
+}
+
 void Swap(int& a, int& b){//utilitza referències
 
 	int c = a;
@@ -74,7 +84,10 @@ public:
 	~Deriv(){ delete numbers; };
 
 };
+
+
 int main(){
+
 	/*
 	int a = 5;
 	int b = 3;
@@ -88,6 +101,7 @@ int main(){
 	Swap(e, f);
 	printf("Primer: %c, Despres %c/n", e, f);
 	*/
+	/*
 	Base* pclass = new Base(5); //dona error perquè el constructor de la classe base demana arguments
 
 	Base a1(5);
@@ -97,6 +111,21 @@ int main(){
 
 		printf("funciona");
 	}
+	*/
+
+	//char* a = "Hola";
+	//char* b = "Adios";
+	
+
+	iPoint a(5, 3);
+	iPoint b(4, 2);
+	SwapTmp(a, b);
+
+	int c = 5;
+	#include "asdf.h"
+	#include "asdf.h"
+	#include "asdf.h"
+	printf("%d\n", c);
 
 
 	/*

@@ -1,5 +1,7 @@
 #include <iostream>
 #include "Point.h"
+
+typedef unsigned int uint;
 /*
 class Shape{
 public:

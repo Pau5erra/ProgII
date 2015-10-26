@@ -65,6 +65,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Cercle.cpp" />
+    <ClCompile Include="p2String.cpp" />
     <ClCompile Include="Point.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
@@ -73,6 +74,7 @@
     <ClInclude Include="asdf.h" />
     <ClInclude Include="Box.h" />
     <ClInclude Include="Cercle.h" />
+    <ClInclude Include="p2String.h" />
     <ClInclude Include="Point.h" />
     <ClInclude Include="Shape.h" />
     <ClInclude Include="Triangle.h" />

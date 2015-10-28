@@ -14,7 +14,7 @@ private:
 	uint capacity;
 
 public:
-	p2String();
+	p2String(){};
 	p2String(const p2String& string);
 	p2String(const char* string);
 	p2String(uint capacity);
@@ -29,8 +29,8 @@ public:
 	bool operator==(const p2String& string) const;
 	bool operator!=(const p2String& string) const;
 
-	//c_str() retorna la cadena que puc pusar a %s És com el getString()
-	//Operadors == i !=
+	//Fer l'operador d'assignació. Comprovar si hi ha memòria. Si n'hi ha suficient copies
+	//Si no n'hi ha suficient crear més memòria (new)
 };
 
 typedef unsigned int uint;

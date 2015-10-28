@@ -1,10 +1,6 @@
 #include "p2String.h"
 #include "string.h"
 
-p2String::p2String(){
-	capacity = 0;
-	str = NULL;
-}
 
 p2String::p2String(const p2String& string){ 
 
@@ -15,7 +11,9 @@ p2String::p2String(const p2String& string){
 
 p2String::p2String(const char* string){ 
 
-
+	capacity = strlen(string);
+	str = new char[capacity+1];
+	strcpy(str, string);
 
 }
 

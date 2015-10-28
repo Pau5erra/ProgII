@@ -12,16 +12,22 @@ class p2String{
 private:
 	char* str;
 	uint capacity;
+
 public:
-	p2String(){ str = NULL; capacity = 0; };
-	p2String(const p2String& string){ str = string.str; capacity = string.capacity; };
-	p2String(char* string){ str = string; };
-	p2String(uint _capacity){ capacity = _capacity; };
+	p2String();
+	p2String(const p2String& string);
+	p2String(const char* string);
+	p2String(uint capacity);
 
 	~p2String(){};
 
+	//getter
+	const char* c_str() const;
+	uint GetCapacity(const char* str) const;
 
-	p2String c_str();
+	//Operadors
+	bool operator==(const p2String& string) const;
+	bool operator!=(const p2String& string) const;
 
 	//c_str() retorna la cadena que puc pusar a %s És com el getString()
 	//Operadors == i !=

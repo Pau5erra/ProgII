@@ -27,6 +27,7 @@ public:
 
 	//getter
 	const char* c_str() const;
+	uint Capacity() const;
 	uint GetCapacity(const char* str) const;
 
 	//Operadors
@@ -38,6 +39,10 @@ public:
 	//assignació
 	const p2String operator= (const char* string);
 	const p2String operator= (const p2String& string);
+
+	//Suma
+	const p2String operator +=(const char* string);
+	const p2String operator +=(const p2String& string);
 
 	//Fer l'operador d'assignació. Comprovar si hi ha memòria. Si n'hi ha suficient copies
 	//Si no n'hi ha suficient crear més memòria (new)

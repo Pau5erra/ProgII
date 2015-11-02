@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Point.h"
+#include "p2String.h"
 
 typedef unsigned int uint;
 /*
@@ -118,7 +119,7 @@ int main(){
 	//char* a = "Hola";
 	//char* b = "Adios";
 	
-
+	/*
 	iPoint a(5, 3);
 	iPoint b(4, 2);
 	SwapTmp(a, b);
@@ -128,7 +129,12 @@ int main(){
 	#include "asdf.h"
 	#include "asdf.h"
 	printf("%d\n", c);
+*/
 
+	p2String a("hola");
+	p2String b("mun");
+	
+	a=a+=b;
 
 	/*
 	int a = -1;

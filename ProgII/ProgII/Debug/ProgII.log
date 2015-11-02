@@ -1,33 +1,24 @@
-﻿Compilación iniciada a las 28/10/2015 17:04:01.
-     1>Proyecto "D:\Users\pausc1\Documents\GitHub\ProgII\ProgII\ProgII\ProgII.vcxproj" en el nodo 2 (Build destinos).
+﻿Build started 02/11/2015 14:44:34.
+     1>Project "C:\Users\Pau\Documents\GitHub\ProgII\ProgII\ProgII\ProgII.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt p2String.cpp Source.cpp
-         Source.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Cercle.cpp Source.cpp p2String.cpp
          p2String.cpp
-     1>d:\users\pausc1\documents\github\progii\progii\progii\p2string.h(14): error C2146: error de sintaxis : falta ';' delante del identificador 'capacity'
-     1>d:\users\pausc1\documents\github\progii\progii\progii\p2string.h(14): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
-     1>d:\users\pausc1\documents\github\progii\progii\progii\p2string.h(20): error C2061: error de sintaxis : identificador 'uint'
-     1>d:\users\pausc1\documents\github\progii\progii\progii\p2string.h(20): error C2535: 'p2String::p2String(void)' : función miembro ya definida o declarada
-                 d:\users\pausc1\documents\github\progii\progii\progii\p2string.h(17) : vea la declaración de 'p2String::p2String'
-     1>d:\users\pausc1\documents\github\progii\progii\progii\p2string.h(26): error C2146: error de sintaxis : falta ';' delante del identificador 'GetCapacity'
-     1>d:\users\pausc1\documents\github\progii\progii\progii\p2string.h(26): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
-     1>d:\users\pausc1\documents\github\progii\progii\progii\p2string.h(26): warning C4183: 'GetCapacity': falta el tipo de valor devuelto; se supone que se trata de una función miembro que devuelve 'int'
-     1>d:\users\pausc1\documents\github\progii\progii\progii\p2string.cpp(8): error C2065: 'capacity' : identificador no declarado
-     1>d:\users\pausc1\documents\github\progii\progii\progii\p2string.cpp(8): error C2039: 'capacity' : no es un miembro de 'p2String'
-                 d:\users\pausc1\documents\github\progii\progii\progii\p2string.h(6) : vea la declaración de 'p2String'
-     1>d:\users\pausc1\documents\github\progii\progii\progii\p2string.cpp(14): error C2065: 'capacity' : identificador no declarado
-     1>d:\users\pausc1\documents\github\progii\progii\progii\p2string.cpp(15): error C2065: 'capacity' : identificador no declarado
-     1>d:\users\pausc1\documents\github\progii\progii\progii\p2string.cpp(20): error C2511: 'p2String::p2String(uint)' : la función miembro sobrecargada no se ha encontrado en 'p2String'
-                 d:\users\pausc1\documents\github\progii\progii\progii\p2string.h(6) : vea la declaración de 'p2String'
-     1>d:\users\pausc1\documents\github\progii\progii\progii\p2string.cpp(22): error C2671: 'p2String::{ctor}' : las funciones miembro static no tienen punteros 'this'
-     1>d:\users\pausc1\documents\github\progii\progii\progii\p2string.cpp(22): error C2227: el operando izquierdo de '->capacity' debe señalar al tipo class/struct/union/generic
-     1>d:\users\pausc1\documents\github\progii\progii\progii\p2string.cpp(32): error C2556: 'uint p2String::GetCapacity(const char *) const' : la función sobrecargada sólo se diferencia de 'int p2String::GetCapacity(const char *) const' por el tipo de valor devuelto
-                 d:\users\pausc1\documents\github\progii\progii\progii\p2string.h(26) : vea la declaración de 'p2String::GetCapacity'
-     1>d:\users\pausc1\documents\github\progii\progii\progii\p2string.cpp(32): error C2371: 'p2String::GetCapacity' : nueva definición; tipos básicos distintos
-                 d:\users\pausc1\documents\github\progii\progii\progii\p2string.h(26) : vea la declaración de 'p2String::GetCapacity'
-         Generando código...
-     1>Compilación del proyecto terminada "D:\Users\pausc1\Documents\GitHub\ProgII\ProgII\ProgII\ProgII.vcxproj" (Build destinos) -- ERROR.
+         Generating Code...
+         Compiling...
+         Cercle.cpp
+     1>c:\users\pau\documents\github\progii\progii\progii\cercle.cpp(70): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+         Generating Code...
+         Compiling...
+         Source.cpp
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Pau\Documents\GitHub\ProgII\ProgII\Debug\ProgII.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Pau\Documents\GitHub\ProgII\ProgII\Debug\ProgII.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Pau\Documents\GitHub\ProgII\ProgII\Debug\ProgII.lib" /MACHINE:X86 Debug\Cercle.obj
+         Debug\p2String.obj
+         Debug\Point.obj
+         Debug\Source.obj
+         ProgII.vcxproj -> C:\Users\Pau\Documents\GitHub\ProgII\ProgII\Debug\ProgII.exe
+     1>Done Building Project "C:\Users\Pau\Documents\GitHub\ProgII\ProgII\ProgII\ProgII.vcxproj" (Build target(s)).
 
-ERROR al compilar.
+Build succeeded.
 
-Tiempo transcurrido 00:00:01.88
+Time Elapsed 00:00:00.70

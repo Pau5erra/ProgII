@@ -68,12 +68,15 @@
     <ClCompile Include="p2String.cpp" />
     <ClCompile Include="Point.cpp" />
     <ClCompile Include="Source.cpp" />
+    <ClCompile Include="DynArray.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Apunts.h" />
     <ClInclude Include="asdf.h" />
     <ClInclude Include="Box.h" />
     <ClInclude Include="Cercle.h" />
+    <ClInclude Include="Definitions.h" />
+    <ClInclude Include="DynArray.h" />
     <ClInclude Include="p2String.h" />
     <ClInclude Include="Point.h" />
     <ClInclude Include="Shape.h" />

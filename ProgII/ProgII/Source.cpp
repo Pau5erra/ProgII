@@ -130,11 +130,20 @@ int main(){
 	#include "asdf.h"
 	printf("%d\n", c);
 */
-
+	/*
 	p2String a("hola");
 	p2String b("mun");
 	
 	a=a+=b;
+	*/
+
+	int i = 5;
+	int* data =new int[i];
+	int* data2 = new int[i + i];
+
+	memcpy(data2, data, sizeof(data));
+
+	delete[] data2;
 
 	/*
 	int a = -1;

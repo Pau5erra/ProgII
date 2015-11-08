@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Point.h"
 #include "p2String.h"
+#include "DynArray.h"
 
 typedef unsigned int uint;
 /*
@@ -136,7 +137,7 @@ int main(){
 	
 	a=a+=b;
 	*/
-
+	/*
 	int i = 5;
 	int* data =new int[i];
 	int* data2 = new int[i + i];
@@ -144,7 +145,7 @@ int main(){
 	memcpy(data2, data, sizeof(data));
 
 	delete[] data2;
-
+	*/
 	/*
 	int a = -1;
 
@@ -181,6 +182,10 @@ int main(){
 
 	printf("%f\n", s1->getArea());
 	printf("%f\n", s2->getArea());*/
+
+
+	
+
 
 	system("PAUSE");
 	return 0;

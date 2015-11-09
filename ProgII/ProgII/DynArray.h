@@ -38,20 +38,31 @@ public:
 		data[num_elem] = new_element;
 
 	}
-	
-	bool empty(){
-		if (capacity == NULL){
-			return true;
-		}
 
-		return false;
+	uint Capacity() const{
+		return capacity;
+	}
+
+	uint At() const{
+		return num_elem;
+	}
+
+	tmp c_str() const{
+
+		return data;
+	}
+
+	bool empty(){
+		
+		return (num_elem == 0);
+		
 	}
 
 	void clear(){
-		if (capacity != NULL){
-			capacity = 0;
-			num_elem = 0;
+		if (data != NULL){
 			delete[] data;
+			capacity = BLOCK;
+			num_elem = 0;
 			data = new tmp[BLOCK];
 		}
 	}
@@ -83,15 +94,6 @@ public:
 
 		return *this;
 	}
-
-	tmp c_str(){
-		return data;
-	}
-
-	uint length(){
-		return num_elem;
-	}
-	
 };
 
 #endif

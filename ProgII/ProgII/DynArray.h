@@ -52,6 +52,7 @@ public:
 			data[0] = '\0';
 		}
 	}
+
 	void operator+=(const DynArray& new_array){
 		if (capacity < num_elem + new_array.num_elem){
 			delete[] data;

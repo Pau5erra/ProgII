@@ -139,6 +139,20 @@ const p2String p2String::operator+= (const p2String& string){
 	return *this;
 }
 
+bool p2String::empty(){
+	if (capacity == NULL){
+		return true;
+	}
+
+	return false;
+}
+
+void p2String::clear(){
+	if (capacity != NULL){
+		str[0] = '\0';
+	}
+}
+
 //Dinamic array aixó surt a l'examen
 //emtpy() ha de dir si la cadena esta buida o no
 //clear() primer caracter de la cadena ha de ser /0

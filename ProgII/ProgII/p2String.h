@@ -44,6 +44,8 @@ public:
 	const p2String operator +=(const char* string);
 	const p2String operator +=(const p2String& string);
 
+	bool empty();
+	void clear();
 	//Fer l'operador d'assignació. Comprovar si hi ha memòria. Si n'hi ha suficient copies
 	//Si no n'hi ha suficient crear més memòria (new)
 };

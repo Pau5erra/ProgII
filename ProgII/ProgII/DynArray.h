@@ -34,7 +34,7 @@ public:
 	
 	void PushBack(const tmp& new_element){
 		
-		num_elem++;
+		if(capacity>=num_elem++)
 		data[num_elem] = new_element;
 
 	}

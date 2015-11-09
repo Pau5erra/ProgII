@@ -59,18 +59,16 @@ public:
 	}
 
 	void clear(){
-		if (data != NULL){
-			delete[] data;
-			capacity = BLOCK;
+		
 			num_elem = 0;
-			data = new tmp[BLOCK];
-		}
+			
 	}
 
 	const DynArray operator+=(const DynArray& new_array){
 		if (capacity < num_elem + new_array.num_elem){
 			delete[] data;
 			capacity += new_array.capacity;
+			num_elem += new_array.num_elem;
 			data = new tmp[capacity];
 		}
 		strcat_s(data, capacity, new_array.data);

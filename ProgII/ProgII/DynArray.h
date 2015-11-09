@@ -34,9 +34,9 @@ public:
 	
 	void PushBack(const tmp& new_element){
 		
-		if ()
-		
+		num_elem++;
 		data[num_elem] = new_element;
+
 	}
 	
 	bool empty(){
@@ -49,20 +49,25 @@ public:
 
 	void clear(){
 		if (capacity != NULL){
-			data[0] = '\0';
+			capacity = 0;
+			num_elem = 0;
+			delete[] data;
+			data = new tmp[BLOCK];
 		}
 	}
 
-	void operator+=(const DynArray& new_array){
+	const DynArray operator+=(const DynArray& new_array){
 		if (capacity < num_elem + new_array.num_elem){
 			delete[] data;
 			capacity += new_array.capacity;
 			data = new tmp[capacity];
 		}
 		strcat_s(data, capacity, new_array.data);
+
+		return *this;
 	}
 
-	void prefix(const DynArray& new_array){
+	const DynArray prefix(const DynArray& new_array){
 		if (capacity < num_elem + new_array.num_elem){
 			delete[] data;
 			capacity += new_array.capacity;
@@ -75,6 +80,8 @@ public:
 		}
 		strcat_s(new_array.data, capacity, data);
 		memcpy(data, new_array.data, new_array.num_elem*sizeof(tmp));
+
+		return *this;
 	}
 
 	tmp c_str(){
